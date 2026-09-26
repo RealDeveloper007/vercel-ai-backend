@@ -1,0 +1,15 @@
+{
+  "name": "school-app-vercel-ai-backend",
+  "version": "1.0.0",
+  "description": "Vercel AI Backend Service for School App Class AI Teacher, Voice Q&A, and Notebook Checking",
+  "main": "api/index.js",
+  "scripts": {
+    "dev": "vercel dev",
+    "build": "echo 'Build complete'"
+  },
+  "dependencies": {
+    "@google/genai": "^0.1.1",
+    "express": "^4.19.2",
+    "cors": "^2.8.5"
+  }
+}
