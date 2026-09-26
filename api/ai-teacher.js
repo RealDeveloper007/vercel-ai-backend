@@ -1,6 +1,8 @@
 // Vercel Serverless Function API Endpoint for School App AI Teacher
 // Deployable directly to Vercel via `vercel deploy` or GitHub integration
 
+const { GoogleGenerativeAI } = require('@google/generative-ai');
+
 module.exports = async (req, res) => {
   // Enable CORS
   res.setHeader('Access-Control-Allow-Credentials', true);
