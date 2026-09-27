@@ -1,19 +1,8 @@
 {
-  "version": 2,
-  "builds": [
+  "rewrites": [
     {
-      "src": "api/ai-teacher.js",
-      "use": "@vercel/node"
-    }
-  ],
-  "routes": [
-    {
-      "src": "/api/ai-teacher/(.*)",
-      "dest": "api/ai-teacher.js"
-    },
-    {
-      "src": "/(.*)",
-      "dest": "api/ai-teacher.js"
+      "source": "/(.*)",
+      "destination": "/api/ai-teacher"
     }
   ]
 }
